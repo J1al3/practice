@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS导航</title>
+	<meta charset="utf-8">
+	<!-- 用IE的最高版本浏览网页，以防低版本IE不支持部分css3属性 -->
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<!-- 意思是使网页的宽度强制适应不同服务窗口的宽度（宽度自适），且用户不能够随意缩放网页 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- 提供字体的网站，这样就可以在网站中使用链接中的字体，family=Josefin就是我们引用的字体 -->
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="样式/normalize.css">
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<!-- nav -->
+			<input type="radio" name="sta" id="inp1" checked="checked">
+			<a href="#con1">home</a>
+
+			<input type="radio" name="sta" id="inp2">
+			<a href="#con2">family</a>
+
+			<input type="radio" name="sta" id="inp3">
+			<a href="#con3">mom</a>
+
+			<input type="radio" name="sta" id="inp4">
+			<a href="#con4">sister</a>
+
+			<input type="radio" name="sta" id="inp5">
+			<a href="#con5">me</a>
+			<!-- nav end content begin -->
+			<div class="con">
+				<section class="sta" id="con1">
+					<div class="desc" data-icon=")"></div>
+					<h2>home</h2>
+					<p>It was like just before the sun goes to beddown on the bayou. There was a million sparkles on the river.</p>
+				</section>
+				<section class="sta bgc" id="con2">
+					<div class="desc" data-icon="2"></div>
+					<h2>family</h2>
+					<p>Hope is a good thing, maybe the best of things, and no good thing ever dies.</p>
+				</section>
+				<section class="sta" id="con3">
+					<div class="desc" data-icon="C"></div>
+					<h2>mon</h2>
+					<p>I find I'm so excited. I can barely sit still or hold a thought in my head. I think it the excitement only a free man can feel, a free man at the start of a long journey whose conclusion is uncertain.I hope I can make it across the border. I hope to see my friend, and shake his hand. I hope the Pacific is as blue as it has been in my dreams. I hope.</p>
+				</section>
+				<section class="sta bgc" id="con4">
+					<div class="desc" data-icon="]"></div>
+					<h2>sister</h2>
+					<p>I'm the type of person,if you ask me a question, and I don't konw the answer,I'm gonna to tell you that I don't konw.But I bet you what: I konw how to find the answer,and I'll find the answer.</p>
+				</section>
+				<section class="sta" id="con5">
+					<div class="desc" data-icon="U"></div>
+					<h2>me</h2>
+					<p>You got a dream,you gotta protect it. People can't do something themselves,they wanna tell you you can't do it.If you want something, go get it. Period.</p>
+				</section>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
