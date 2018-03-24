@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手风琴效果demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.9.1.js"></script>
+</head>
+<body>
+    <div id="subject" class="wrapper">
+        <ul>
+            <li>
+                <a>
+                    <img src="img/1.jpg" alt="">
+                    <!-- 将描述文字放在一起 -->
+                    <div class="info">
+                        <h3 style="color:#F62368">聚美妆</h3>
+                        <p>聚美妆1/2周年庆</p>
+                        <p class="price"><strong>1</strong><i>折起</i></p>
+                    </div>
+                    <!-- 右侧虚线 -->
+                    <i class="line"></i>
+                    <!-- 遮罩层，通过设置透明度实现阴影 -->
+                    <i class="mask"></i>
+                </a>
+            </li>
+            <li class="big">
+                <a href="">
+                    <img src="img/2.jpg" alt="">
+                    <div class="info">
+                        <h3 style="color:#FF5799">Baby购</h3>
+                        <p>宝宝该换装了，新品抢购</p>
+                        <p class="price"><strong>2.5</strong><i>折起</i></p>
+                    </div>
+                    <i class="line"></i>
+                    <i class="mask"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/3.jpg" alt="">
+                    <div class="info">
+                        <h3 style="color:#6D3FA7">时装团</h3>
+                        <p>时尚春装，清新小潮搭配</p>
+                        <p class="price"><strong>1</strong><i>折起</i></p>
+                    </div>
+                    <i class="line"></i>
+                    <i class="mask"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/4.jpg" alt="">
+                    <div class="info">
+                        <h3 style="color:#BB1632">TV购</h3>
+                        <p>补血养颜 就这么简单</p>
+                        <p class="price"><strong>2.6</strong><i>折起</i></p>
+                    </div>
+                    <i class="line"></i>
+                    <i class="mask"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/5.jpg" alt="">
+                    <div class="info">
+                        <h3 style="color:#6F9400">聚新鲜</h3>
+                        <p>最纯正的泰国香米</p>
+                        <p class="price"><strong>5</strong><i>折起</i></p>
+                    </div>
+                    <i class="mask"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        function mouseover(e){
+            var list = $('#subject li');
+            var target = $(e.target).parents('li');
+
+            list.removeClass('big');
+            target.addClass('big');
+        }
+
+        (function(){
+            var outer = $('#subject');
+            outer.find('li').on('mouseover', mouseover);
+        })()
+        
+    </script>
+</body>
+</html>
